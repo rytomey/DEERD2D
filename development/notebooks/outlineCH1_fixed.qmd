@@ -1,0 +1,92 @@
+---
+title: "CH 1: Deer Population Management in the 21st Century"
+format: html
+editor: visual
+bibliography: references.bib
+link-citations: true
+---
+
+# Introduction to Deer Population Management
+
+## History of Deer Management Eras in the United States
+
+### Exploitation and Near‑Extirpation (pre‑1900)
+
+-   **Unregulated exploitation and habitat loss**
+    -   By early 1900s, deer abundance in the Southeast dropped below 215,000 [@hanberry2020]; continent-wide population was near 300,000 [@unknown2025].
+    -   Triggered shift from deer as a commodity to public trust resource.
+-   **Lack of scientific management**
+    -   No formal season structures or regulations; poaching was common [@unknown2025].
+
+------------------------------------------------------------------------
+
+### Recovery and Restoration Era (1910s–1950s)
+
+-   **Restocking programs**
+    -   By 1950, Southeastern populations rebounded to \~476,000 [@hanberry2020].
+-   **Research focus**
+    -   Studies on density dependence at George Reserve [@mccullough1979].
+    -   Manuals detailed habitat and disease dynamics [@halls1984].
+-   **Management actions**
+    -   Introduced buck-only harvests, predator control.
+    -   Mandibular tooth row used to age deer [@governo2006].
+
+------------------------------------------------------------------------
+
+### Expansion and QDM Era (1960s–1990s)
+
+-   **Population boom**
+    -   By 1982, populations \>6 million, densities \~4.6 deer/km² [@hanberry2020].
+-   **QDM adoption**
+    -   Emphasized mature buck harvest, doe management [@miller1995].
+    -   Cooperatives led to improved outcomes [@pruitt2023].
+-   **Model development**
+    -   Integrated harvest models [@xie1999]; spotlight survey biases [@collier2007].
+    -   Maternal condition & sex ratios [@saalfeld2007]; thermal imaging [@ditchkoff2005].
+
+------------------------------------------------------------------------
+
+### Modern Era – Overabundance and Complexity (2000s–present)
+
+-   **Hunter decline & population growth**
+    -   By 2003, deer numbers reached 10.8–12 million in the Southeast [@hanberry2020].
+    -   Agencies reported declining hunter effort [@brown2000; @enck2003].
+-   **Disease surveillance**
+    -   BVDV identified in harvested deer [@passler2008; @passler2009].
+    -   CWD management via simulations and agent-based models [@belsare2020a; @belsare2020b; @mysterud2021].
+-   **Predators and urbanization**
+    -   Coyotes reduced fawn recruitment [@kilgo2010].
+    -   Private land practices mimicked state rules [@wiskirchen2023].
+-   **Cooperation and data standards**
+    -   National “call to action” urged unified harvest data [@brandell2022].
+    -   Landowner-led cooperatives became key tools [@pruitt2023].
+
+------------------------------------------------------------------------
+
+## White-Tailed Deer and the North American Model of Conservation
+
+### Origins of the Model
+
+-   **Public trust and anti-market reforms**
+    -   Collapse of market hunting systems led to laws emphasizing public ownership [@unknown2025].
+-   **Equity and legal structure**
+    -   Uniform access via hunting licenses; antler-point rules democratized harvest [@wiskirchen2023].
+-   **Scientific foundation**
+    -   Research on reproduction, nutrition, and detection formed basis for modern practices [@mccullough1979; @halls1984; @governo2006; @collier2007; @belsare2020a].
+-   **Legitimate use and hunter participation**
+    -   Hunters fund and implement management but declining numbers are a challenge [@brown2000; @enck2003; @pruitt2023].
+
+------------------------------------------------------------------------
+
+### Evolution of the Model
+
+-   **Shift from yield to damage control**
+    -   Liberalized harvests and selective removals address disease and overabundance [@vercauteren2011; @passler2008; @mysterud2021].
+-   **Predator integration and ecosystem scope**
+    -   Coyotes' role in regulating recruitment reframed deer management [@kilgo2010].
+-   **Collaborative governance**
+    -   Unified frameworks and state cooperation reinforce adaptive, science-based policies [@brandell2022].
+
+------------------------------------------------------------------------
+
+# References
