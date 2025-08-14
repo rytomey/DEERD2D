@@ -1,0 +1,257 @@
+---
+title: "Dissertation Chapter Outline"
+author: Rylee Tomey
+format:
+  docx: default
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Chapter 1: White-tailed Deer Management in the 21st Century
+
+## Chapter Objective
+
+-   Conduct a conceptual synthesis of white-tailed deer (WTD) population
+    modeling and monitoring tools as they relate to management
+    decision-making in the 21st century.\
+-   Evaluate the evolution of analytical approaches, identify persistent
+    limitations, and synthesize a pluralistic, reproducible framework
+    for state agency decision-making.\
+
+Produce a generalizable **decision-making framework** that integrates
+multiple modeling approaches to address contemporary management
+challenges.
+
+### Introduction and Rationale
+
+-   Turning point in management: shifting from restoration and harvest
+    regulation to disease control, hunter recruitment/retention, climate
+    change adaptation, and sociopolitical considerations.\
+-   Current decision-making often shaped by legacy approaches from the
+    20th century, despite changing ecological and social contexts.\
+
+Absence of a standardized, transparent, and reproducible framework
+hinders agency capacity to make defensible, adaptive decisions.
+
+## \### Historical Foundations
+
+-   Major management eras:
+    -   *Exploitation and near-extirpation* (pre-1900s)\
+    -   *Restoration and recovery* (1910s–1950s)\
+    -   *Population expansion and Quality Deer Management*
+        (1970s–2000s)\
+    -   *Contemporary era* (2010s–present) — marked by disease
+        emergence, declining hunter participation, and broader
+        environmental change.\
+-   Role of the North American Model of Wildlife Conservation in shaping
+    funding structures, public trust mandates, and harvest regulation.\
+
+Legacy effects: how past successes and institutional frameworks
+constrain modern adaptation.
+
+### Contemporary Management Challenges
+
+-   **Ecological and epidemiological drivers**: CWD, EHD, bovine TB,
+    Lyme disease, climate-driven range shifts.\
+
+-   **Sociocultural pressures**: declining hunter numbers, shifting
+    demographics, urbanization, changing stakeholder expectations.\
+
+-   **Political and institutional constraints**: policy inertia,
+    mistrust in agencies, stakeholder polarization.\
+
+-   **Private–public land management tensions**: DMAP programs,
+    cooperative data sharing, and regulatory consistency.
+
+    ### Current Decision-Support Practices
+
+-   Dominance of harvest-based monitoring: Statistical Population
+    Reconstruction (SPR), Sex–Age–Kill (SAK) models — data needs,
+    assumptions, scalability.\
+
+-   Supplementary and alternative data sources:
+
+    -   Camera trap surveys, including citizen science integration\
+    -   Roadkill/incidental mortality reports\
+    -   Telemetry and GPS collar data\
+    -   Hunter effort and satisfaction surveys\
+
+Integration potential: double-sampling designs, linking low-resolution
+extensive data with intensive localized datasets.
+
+### Evolution of Population Modeling Approaches
+
+-   **Traditional approaches**: SAK, SPR, matrix models — strengths and
+    weaknesses in informing harvest policy.\
+
+-   **Modern approaches**:
+
+    -   Bayesian hierarchical/state-space models\
+    -   Spatially explicit agent-based models (ABMs)\
+    -   Hybrid and modular models combining elements of both\
+
+-   **Evaluation criteria**:
+
+    -   Data requirements and availability\
+    -   Interpretability for managers/stakeholders\
+    -   Cost/logistical feasibility\
+    -   Flexibility to evaluate alternative scenarios\
+
+-   Reproducibility and transparency
+
+    ### Toward a Pluralistic “Bouquet of Tools”
+
+-   Rationale for modular frameworks over single-model dependence.\
+
+-   Ani’s “Rule of 3”: no model can answer all questions; multiple
+    complementary tools are needed to address the full decision space.\
+
+Mapping model types to decision needs (e.g., harvest optimization,
+disease risk assessment, habitat change impacts).
+
+### Gaps and Opportunities
+
+-   Lack of reproducible workflows and standardization across agencies.\
+-   Underuse of citizen science and participatory monitoring in formal
+    frameworks.\
+-   Limited cross-jurisdictional data integration and sharing.\
+
+Opportunities for cloud-based, interactive decision-support tools (e.g.,
+Shiny, GitHub-hosted workflows) to democratize access and facilitate
+adaptive management.
+
+### Final Synthesis: Proposed Decision-Making Framework
+
+-   Core principles: generalizability, precision, reproducibility,
+    transparency, and adaptability.\
+-   Integration of multiple data streams with complementary modeling
+    approaches.\
+-   Explicit documentation of assumptions, uncertainty, and trade-offs
+    in decision outcomes.\
+-   Framework designed for scalability across spatial (property, zone,
+    state) and temporal (annual, decadal) scales.\
+-   Intended as a **decision-support blueprint** for state wildlife
+    agencies to guide defensible and adaptive WTD management in the 21st
+    century.
+
+## Chapter 2: Building a Modeling Framework for Deer Management
+
+**Objective**:
+
+-   Build an adaptable population modeling framework using Alabama as
+    the initial focus, centered around an ABM and designed for eventual
+    transferability to other states or contexts.
+
+**Main Points**:
+
+-   Outline of available harvest data, cooperator check station records,
+    and decision workflows currently used by Alabama DWFF.
+
+-   ABM built using ODD protocol as the foundation using available data
+    in AL representing spatial harvest dynamics, deer life-history, and
+    hunter behavior.
+
+-   Integrate other modeling and methods (e.g., spreadsheet
+    deterministic models can help initialize or calibrate the ABM)
+
+-   Scenario-based evaluation: simulate the impact of regulatory changes
+    (e.g., season length, bag limits, spatial scale, demographic ratios)
+    on deer population structure and harvest outcomes.
+
+-   Use trade-off analysis to visualize how decisions might perform
+    across multiple agency objectives (e.g., age structure, harvest
+    numbers, effort).
+
+**Alternatives and Additions**:
+
+-   Demonstrate generalizability by applying model structure to a second
+    southeastern state using their data templates. (motivation for
+    participatory effort from DWFF)
+
+-   Include scenarios with a decline in hunting participation and
+    explore alternative approaches (e.g., landowner incentives,
+    recruitment-focused efforts).
+
+------------------------------------------------------------------------
+
+## Chapter 3
+
+## Option A: Integrating Evaluating Nontraditional Data for Modeling and Monitoring
+
+**Objective**:
+
+-   Assess the potential to incorporate and validate wildlife population
+    models using existing data sources that are publicly available
+
+**Main Points**:
+
+-   Categorize data by structure: traditional (cooperator harvest),
+    semi-structured (camera projects), and unstructured (e.g., social
+    media, opportunistic sightings).
+
+-   Test how these data could validate model predictions or refine
+    parameter estimates.
+
+-   Build feedback loops where outputs from simulations inform
+    priorities for new data collection, and vice versa.
+
+-   Consider implementation challenges such as standardization, storage,
+    legal concerns.
+
+-   Highlight automation opportunities (e.g., ML image classification),
+    and future surveillance systems that enable more responsive
+    management.
+
+**Alternatives and Additions**:
+
+-   Focus in on trail cameras as a case study—building off recent
+    applications in avian monitoring (e.g., Jonathon’s bird point work).
+
+## Option B: Designing Modeling Tools and Data Systems with State Agencies and Stakeholders
+
+**Objective**:
+
+-   Work directly with Alabama DWFF and other stakeholders to co-develop
+    usable, trusted, and streamlined data systems and modeling
+    interfaces.
+
+**Main Points**:
+
+-   Identify what data is already collected (e.g., antler points, age
+    estimates) and evaluate how it could feed into a modeling workflow.
+
+-   Propose centralized workflows to reduce archived or inconsistent
+    data collection (e.g., digital entry from the field, real-time
+    dashboards).
+
+-   Conduct interviews or surveys with hunters, landowners, and agency
+    staff to understand trust in models, desired outputs, and
+    transparency needs.
+
+## Option C: Modeling Stressor Interactions and Regulatory Trade-Offs in Southeastern Deer Populations
+
+**Objective**:
+
+-   Extend the ABM to simulate how interacting population stressors such
+    as disease outbreaks, habitat degradation, and invasive
+    species—could shape management outcomes and risk-based
+    decision-making.
+
+**Main Points**:
+
+-   Overview of stressors: CWD, EHD, tick-borne burdens, drought
+    effects, competition with pigs.
+
+-   Link stressor events to modeled dynamics (e.g., how reduced forage +
+    high density = higher disease prevalence).
+
+-   Simulate compounding scenarios (e.g., drought year + reduced hunter
+    effort + EHD outbreak).
+
+-   Evaluate cross-boundary impacts from local disturbances.
+
+-   Model surveillance strategies and adaptive regulation
+
+-   Include uncertainty analysis: how risk tolerance and unknowns could
+    shift decision thresholds.

@@ -1,0 +1,142 @@
+---
+title: "White-tailed Deer Population Management in the 21st Century"
+format: docx
+editor: visual
+bibliography: references.bib
+---
+
+## INTRODUCTION
+
+White-tailed deer (*Odocoileus virginianus*; hereafter "deer") are among the most ecologically, culturally, and economically significant wildlife species in North America.
+
+Deer have been a critical subsistence resource to humans for over 10,000 years.
+
+However, unregulated market hunting and extensive land conversion drove drastic declines in deer populations during the 18th and 19th centuries
+
+By the early 20th century, deer populations had been reduced to isolated remnants across much of their historical range as a result of commercial harvest and habitat loss \[\@barick_1951; \@mccullough_1979; Deyoung, 2011\].
+
+Recovery of the nearly extirpated deer population was facilitated through restocking programs, habitat restoration efforts, and regulation within the framework of the North American Model of Wildlife Conservation (NAMWC).
+
+Legislation such as the Puttman-Robsertson Act of 1937 institutionalized regulated hunting as a conservation tool and funding mechanisms \[\@hanberry_2020; \@barick_1951; \@halls_1984; \@mccullough_1979; \@hewitt_2015; \@enck_2003\].
+
+Conservation efforts restored deer populations to historical values which has continued to increase during the 21st century and produced what is often described as an over abundant population.
+
+We currently sit at a pivotal / transition / cross roads for deer population management
+
+While this conservation success remains a hallmark of wildlife management, it has produced new ecological and operational challenges. In many regions, deer have become overabundant, resulting in suppressed forest regeneration, vegetation homogenisation, and heightened deer–human conflicts \[McShea et al., 2009\].
+
+Meanwhile, emerging threats—including chronic wasting disease (CWD), epizootic haemorrhagic disease (EHD), and climate-driven range shifts—are altering population dynamics and elevating disease transmission risks \[\@belsare_2020; \@mccullough_1979; Bakshi et al., 2024\].
+
+The successful conservation of deer has since resulted in the restoration of a population that is often considered over abunant conservation success has entered a pivotal period in North American deer management
+
+Such biological stressors have been compounded by the recent sociopolitical limitations such as declining hunter participation. A reduction in agency revenue streams traditionally sustained by license sales and excise taxes have thus been attributed to demographic shifts, lifestyle changes, and waning cultural engagement. Simultaneously, scepticism toward government agencies and science-based management has intensified, impeding surveillance, compliance, and policy implementation \[\@urbanek_2011; \@kansky_2025\]. Regional disparities in disease prevalence, habitat conditions, and political environments further complicate decision-making \[\@brandell_2022; \@pruitt_2023; \@wiskirchen_2023\].
+
+state agencies continue to rely on legacy modelling approaches such as Sex–Age–Kill (SAK), Simple Population Reconstruction (SPR), and Leslie matrix models. Though operationally efficient, these methods often rest on strong assumptions about population closure and homogeneity, limiting their responsiveness to contemporary ecological variability \[\@caswell_2014; \@norton_2015; \@forsyth_2022\].
+
+Modern ecological modelling offers a more robust suite of tools. Integrated population models (IPMs), Bayesian state-space frameworks, and agent-based models (ABMs) allow for integration of diverse data streams, explicit treatment of uncertainty, and simulation of individual-level processes \[\@schaub_2007; \@plard_2019; \@belsare_2020; \@nagyreis_2021\]. These methods are increasingly supported by advancements in field technologies, including high-resolution telemetry, AI-enhanced camera traps, unmanned aerial systems, and real-time cloud analytics via platforms such as R, NetLogo, and ArcGIS Field Maps \[\@saalfeld_2007; \@beery_2019; \@lyu_2024; \@jones_2024\]. Nevertheless, access to these tools remains uneven, and implementation is often hindered by resource limitations and inconsistent technical capacity \[\@cegielski_2016; \@robinson_2016\].
+
+no single model can simultaneously maximise precision, generalisability, and reproducibility \[\@starfield_1997\] so we introduce a decision-support framework in which diverse modelling techniques are integrated to address different facets of the management problem \[\@belsare_2025\].
+
+This framework is explicitly designed for application across agencies, particularly in the eastern United States, where ecological and institutional similarities support model transferability. By embedding stakeholder participation in scenario design and model calibration, the framework ensures that outputs are both methodologically sound and locally relevant \[\@robinson_2016; \@pruitt_2023\].
+
+Crucially, this system is not constrained by current data availability. With ABMs serving as flexible backbones, jurisdictions can use generalised or neighbouring-state values to establish baseline models. These can then serve as references for evaluating policy alternatives, even under data-sparse conditions \[\@belsare_2025\].
+
+To guide the development of this framework, this chapter pursues three key objectives: (1) to synthesise the historical trajectory of deer management, from population collapse to overabundance; (2) to outline the complex 21st-century challenges confronting deer managers, including ecological, technological, and stakeholder pressures; and (3) to justify a pluralistic, participatory modelling framework that aligns with the goals of modern ecological modelling and adaptive decision-making.
+
+This introduction establishes the scientific and policy context for the dissertation. By integrating historical lessons with contemporary modelling tools and participatory governance principles, the approach outlined here seeks to advance deer management toward a more informed, adaptive, and reproducible future.
+
+## MATERIALS AND METHODS
+
+### CONCEPTUAL AND CONTEXTUAL SYNTHESIS
+
+### BIOLOGIST PERSPECTIVES AND PRACTICES
+
+\_\_\_\_\_\_\_
+
+## RESULTS AND DISCUSSION
+
+### Historical Context
+
+### Modern Challenges
+
+### Population Assessment
+
+### Modern Tools and Technologies
+
+### Decision-Making Framework
+
+#### Input - Data and Participatory Information
+
+#### Process - Analytic Framework Bouquet/Toolbox
+
+**Output - Informed Management Decisions**
+
+### Contributions of Dissertation
+
+\_\_\_\_\_\_\_\_\_\_
+
+## ROUGH FIGURES, TABLE, and SUPPLEMENTAL INFO
+
+### Tables
+
+### Figures
+
+### Supplemental Information / Materials
+
+1.  Challenges of 21st century - mind map chart similar to below (cleaned-up) - line work / adobe illustration for best quality and transfer-ability / use outside of pub
+
+-   should highlight the major concerns and challenges shared across agencies that manage WTD populations
+
+![Interrelatedness of 21st Century WTD Population Management Challenges](challenges21.png){fig-align="center" width="538"}
+
+2.  WTD population management and modeling cycle to produce informed management decisions
+
+-   can add complexity / examples
+
+![White-tailed Deer Population Management and Modeling Cycle](FWcycle.png){fig-align="center" width="480"}
+
+3.  Process to Evaluate Management Decisions with or without Available Data
+
+-   add values evaluated at each itema and how these are broken down (using arrows)
+
+![ABM Truthing Process for Comparisons of Management Decisions](ABMasTruth.png){fig-align="center" width="729"}
+
+\_\_\_\_\_\_\_\_\_\_
+
+## **Drafting Concepts for RDT Presentation / Project Naming**
+
+#### **1. Rule of 3 – A Founding Principle in this Research and the Structure and Design of Many Other Projects**
+
+-   additional links:
+
+    -   [Communication and Design](https://medium.com/@clem2clem/the-rule-of-three-a-powerful-principle-in-communication-and-design)
+
+    -   [Examples by Microsoft](https://www.microsoft.com/en-us/microsoft-365-life-hacks/writing/what-is-rule-of-three#:~:text=In%20storytelling%3A%20%E2%80%9CThe%20Three%20Little,three%20used%20by%20Julius%20Caesar.)
+
+-   Many of the high-level concepts in the proposed decision-making framework naturally follow a "rule of 3" structure
+
+    -   Might not be relevant to manuscript, but for repository / shiny app / other tool naming or for presentations this might represent a memorable play on the most basic concepts followed in dissertation (e.g. 3 step deer decisions, 3ruledecision... not great ones but)
+
+        -   **Three core objectives** that no single model can fully address (2/3 max) \~ requiring plural fw
+
+            -   The framework prioritizes **multi-modeling** because: No single model can fully address all objectives, Each model contributes uniquely to understanding trade-offs., The combination allows for more robust decision support.
+
+                -   This could be visualized as a bouquet or toolbox—each model a distinct tool or flower contributing to the whole.
+
+        -   **Three factors that influence outcome quality:** Data -\> Framework -\> Management
+
+            -   better information in = better framework out - framework unlocked from data availability limitations
+
+            -   participatory data and information collaboration improves each level of the approaches cycle, where: the better informed management decisions are a result of collaborative data input from state agency and biologist partners (i.e., data quantity from studies, harvest, etc. won't necessarily result in management recommendations that are applicable and accessible for ongoing deer management in state)
+
+                -   participatory scenario-building ensures models reflect real-world questions and truths, this collaboration also helps to avoid the 'black box' problem and fosters agency ownership of framework produced because each step of process is explained and built by both researchers and partners
+
+                -   the goal is to work toward an "immortal model" that: captures reality through parameterized and processed data, evaluates locally relevant scenarios, and produces recommendations that are actionable and trusted by agency partners
+
+                    -   ensures that framework and internal models are understood, used, and sustained beyond the life of the research project agreement
+
+        -   **Three values compared in ABM/IBM so that data availability is not limiting**: base model -\> scenario outcomes -\> modeled population
+
+            -   agent/individual based modeling serves as a flexibly core/base that inst constrained by data availability/scarcity
+
+                -   a base model can be constructed using generalized or neighboring-state values, scenario outcomes are then compared against the base to evaluate management decisions - This approach treats the base ABM as a reference truth, enabling meaningful comparisons even when local data is limited
