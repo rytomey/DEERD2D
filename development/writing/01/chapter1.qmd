@@ -140,3 +140,129 @@ This introduction establishes the scientific and policy context for the disserta
             -   agent/individual based modeling serves as a flexibly core/base that inst constrained by data availability/scarcity
 
                 -   a base model can be constructed using generalized or neighboring-state values, scenario outcomes are then compared against the base to evaluate management decisions - This approach treats the base ABM as a reference truth, enabling meaningful comparisons even when local data is limited
+
+
+
+```{r}
+#| label: libs
+#| message: false
+#| warning: false
+# Required packages
+library(tidyverse)
+library(tidygraph)
+library(ggraph)
+library(gt)
+
+# ---------------------------
+# DATA: Nodes with logic + refs
+# ---------------------------
+nodes <- tibble::tribble(
+  ~id, ~label, ~logic, ~refs,
+  1, "Deer Population", "Central to all management issues: fluctuations from collapse → recovery → overabundance.",
+     "adams1960; trefethen1970; hanberry2020; acevedocharry2025; berl2025; cook2003; hewitt2015; mcshea2012",
+  2, "Hunter Participation", "Linked to cultural values, agency funding, and population control; declines reduce harvest and revenue.",
+     "enck2003; diefenbach2021; hewitt2015; urbanek2011",
+  3, "Profit & Funding", "Agencies depend on hunter-derived funds (licenses, Pittman–Robertson); declines threaten fiscal sustainability.",
+     "mcshea2012; cook2003; hewitt2015; diefenbach2021",
+  4, "State Agencies", "Regulate harvest, set goals, and mediate among stakeholders; constrained by funding and public trust.",
+     "diefenbach2021; logan2025; urbanek2011",
+  5, "Regulations (NAM)", "Historically framed by NAM; less suited to overabundance, suburban conflict, and disease.",
+     "hewitt2015; mcshea2012; diefenbach2021; hanberry2020",
+  6, "Disease", "High densities linked to CWD/EHD/TB; disease erodes hunter confidence and agency credibility.",
+     "agusto2025; needham2007; mcshea2012; belsare1970b; ditchkoff2025",
+  7, "Public Health", "Zoonotic risks (e.g., Lyme) scale with deer and vector dynamics; contact increases in suburbia.",
+     "scofield2002; white2010; schwegmann2024; diefenbach2021",
+  8, "Public Perception & Trust", "Trust in agencies/science mediated by visible outcomes and transparency; distrust hinders cooperation.",
+     "logan2025; ditchkoff2025; urbanek2011; allan2018",
+  9, "Traditional Values", "Hunting traditions sustain NAM but are eroding with cultural change; creates disconnects.",
+     "hewitt2015; urbanek2011; brown1970; scofield2002",
+ 10, "Climate Change", "Shifts range limits, forage, and survival; synergistic with disease and public health risks.",
+     "dawe2016; cote2004; bakshi2024; schwegmann2024",
+ 11, "Urbanization", "Suburban sprawl restricts hunting and magnifies conflicts (DVCs, property damage).",
+     "scofield2002; urbanek2011; conover1995; hubbard2009",
+ 12, "Other Ungulates", "Interactions with elk/moose/cervids (competition; shared disease pools).",
+     "schwegmann2024; cote2004; fuller2001a",
+ 13, "Captive Populations", "Farming/captive cervids elevate CWD risk and regulatory complexity.",
+     "mcshea2012; needham2007; belsare1970b",
+ 14, "Interrelated Challenges", "Crossroads node: disease ↔ hunter decline ↔ funding ↔ trust; need adaptive, integrative frameworks.",
+     "diefenbach2021; ditchkoff2025; logan2025; brandell2022; allan2018"
+)
+
+# ---------------------------
+# DATA: Edges (influences)
+# ---------------------------
+edges <- tribble(
+  ~from, ~to,
+  "Deer Population","Disease",
+  "Deer Population","Public Health",
+  "Deer Population","Hunter Participation",
+  "Deer Population","Profit & Funding",
+  "Hunter Participation","Profit & Funding",
+  "Hunter Participation","Regulations (NAM)",
+  "State Agencies","Regulations (NAM)",
+  "State Agencies","Profit & Funding",
+  "State Agencies","Public Perception & Trust",
+  "Regulations (NAM)","Hunter Participation",
+  "Regulations (NAM)","Deer Population",
+  "Disease","Public Perception & Trust",
+  "Disease","State Agencies",
+  "Public Perception & Trust","Regulations (NAM)",
+  "Urbanization","Public Health",
+  "Captive Populations","Disease",
+  "Traditional Values","Hunter Participation",
+  "Traditional Values","Public Perception & Trust",
+  "Climate Change","Deer Population",
+  "Climate Change","Public Health",
+  "Other Ungulates","Deer Population",
+  "Profit & Funding","State Agencies",
+  "Interrelated Challenges","Disease",
+  "Interrelated Challenges","Public Health",
+  "Interrelated Challenges","Hunter Participation",
+  "Interrelated Challenges","Climate Change",
+  "Interrelated Challenges","Public Perception & Trust",
+  "Interrelated Challenges","State Agencies"
+) |>
+  left_join(nodes %>% select(id, label), by = c("from" = "label")) |>
+  rename(from_id = id) |>
+  left_join(nodes %>% select(id, label), by = c("to" = "label")) |>
+  rename(to_id = id)
+
+stopifnot(!any(is.na(edges$from_id) | is.na(edges$to_id)))
+
+# ---------------------------
+# FIGURE: Conceptual Map (publication-ready)
+# ---------------------------
+set.seed(42)
+graph <- tbl_graph(nodes = nodes, edges = edges |> select(from = from_id, to = to_id), directed = TRUE)
+
+g <- ggraph(graph, layout = "fr") +
+  geom_edge_link(arrow = arrow(type = "closed", length = unit(3, "mm")), end_cap = circle(2.5, "mm"), width = 0.4) +
+  geom_node_label(aes(label = label), size = 3.3, label.size = 0.25) +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    axis.title = element_blank(),
+    axis.text = element_blank(),
+    panel.grid = element_blank()
+  ) +
+  labs(title = "Conceptual Map of White-tailed Deer Management Challenges in the 21st Century")
+
+g
+{r}
+Copy
+Edit
+#| label: supplementary-table
+#| tbl-cap: "Supplementary Table S1. Conceptual map items, logic, and references (Bib keys)."
+nodes %>%
+  select(Item = label, Logic = logic, `References (Bib keys)` = refs) %>%
+  gt() %>%
+  tab_options(table.font.size = px(12)) %>%
+  cols_width(
+    Item ~ px(200),
+    Logic ~ px(520),
+    `References (Bib keys)` ~ px(300)
+  ) %>%
+  tab_style(style = cell_text(weight = "bold"), locations = cells_column_labels()) %>%
+  tab_source_note(md("Full citations appear in the manuscript bibliography."))
+```
+
